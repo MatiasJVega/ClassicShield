@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js"> </script>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>ClassicShield - Cotizador de Seguros para Automóviles Clásicos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <p>
+                Classic Shield Cotizador
+            </p>
+        </div>
+        <div class="formulario">
+            <div>
+                <p class="title">Cotizá tu auto aquí...</p>
+                <div class="columnas">
+                    <form class="cotizador-form">
+                        <div class="controles"> 
+                            <div class="inputs">
+                                <label for="marca">Marca:</label>
+                                <input type="text" id="marca" name="marca" required><br>
+                                
+                                <label for="modelo">Modelo:</label>
+                                <input type="text" id="modelo" name="modelo" required><br>
+                    
+                                <label for="kilometraje">Kilometraje:</label>
+                                <input type="number" id="kilometraje"  onchange="cambioKilometraje()" name="kilometraje" required><br>
+                    
+                                <label for="combustible">Combustible:</label>
+                                <select id="combustible" name="combustible">
+                                    <option value="Nafta">Nafta</option>
+                                    <option value="Gasoil">Gasoil</option>
+                                    <option value="GNC">GNC</option>
+                                </select><br>
+                            </div>
+                            <div class="inputs">
+                                <label for="color">Color:</label>
+                                <input type="text" id="color" name="color" required><br>
+                                
+                                <label for="valor">Valor Estimado:</label>
+                                <input type="number" id="valor" name="valor" required><br>
+                                
+                                
+                                <label for="cobertura">Tipo de Cobertura:</label>
+                                <select id="cobertura" name="cobertura">
+                                    <option value="responsabilidad">Responsabilidad Civil</option>
+                                    <option value="danos-propios">Daños Propios</option>
+                                
+                                </select><br>
+                
+                                <label for="descuento">Descuento:</label>
+                                <select id="descuento" name="descuento">
+                                    <!-- <option value="desc_bajo_km">Descuento por bajo kilometraje</option> -->
+                                    <option value="desc_pago_anual">Descuento por pago anual.</option>
+                                    <option value="desc_pago_elec">Descuento por pago electrónico.</option>
+                                </select><br>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <button type="submit" onclick="calcularCotizacion()" class="boton-cotizador">
+                                <span>Cotizar</span>
+                                <img src="./images/png.png" alt="cotizador-boton">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+   
+
+    
+</body>
+</html>

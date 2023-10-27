@@ -1,0 +1,135 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.banner{
+    background-image: url("../images/vecteezy_vintage-retro-style-background-with-grunge-texture_17633119.jpg");
+    height: 105px;
+    background-repeat: round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner p {
+    font-family: Bangers;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario p.title{
+    color: #000;
+    font-family: Antonio;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.controles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.cotizador-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #000;
+    font-family: Antonio;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+}
+
+.cotizador-form label{
+    margin-bottom: 9px;
+}
+
+.cotizador-form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background: #FED353;
+    margin: 0;
+}
+
+input, select{
+    min-width: 225px;
+    height: 30px;
+    flex-shrink: 0;
+    outline: none;
+    font-family: 'Antonio', sans-serif;
+}
+
+input:focus{
+    border-color: #FED353;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+    width: 667px;
+}
+
+.boton-cotizador{
+    width: 81px;
+    height: 88px;
+    flex-shrink: 0;
+    border: #6b6565 2px dashed;
+    background: #F49300;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #AF2618;
+    text-align: center;
+    font-family: Bangers;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.boton-cotizador:hover{
+    background-color: #BE780D;
+}
+.boton-cotizador img{
+    width: 100%;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
